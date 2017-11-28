@@ -1,7 +1,7 @@
 ﻿using Microsoft.WindowsAzure.Storage.Table;
 using System;
 
-namespace CryptoBank.Models
+namespace ModernMoney.Models
 {
     public class BaseForm:TableEntity
     {

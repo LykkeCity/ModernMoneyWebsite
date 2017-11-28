@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using CryptoBank.Models;
+using ModernMoney.Models;
 using System;
 using System.Net;
 using System.Net.Mail;
-using CryptoBank.Infrastructure;
+using ModernMoney.Infrastructure;
 using Lykke.SettingsReader;
 
-namespace CryptoBank
+namespace ModernMoney
 {
     public static class EmailSender
     {

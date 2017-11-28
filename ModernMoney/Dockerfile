@@ -3,4 +3,4 @@ ARG source
 WORKDIR /app
 EXPOSE 80
 COPY . .
-ENTRYPOINT ["dotnet", "CryptoBank.dll"]
+ENTRYPOINT ["dotnet", "ModernMoney.dll"]

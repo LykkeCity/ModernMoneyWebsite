@@ -1,7 +1,7 @@
 ﻿using Microsoft.WindowsAzure.Storage.Table;
 using System;
 
-namespace CryptoBank
+namespace ModernMoney
 {
     public static class AzureStorageHelper
     {

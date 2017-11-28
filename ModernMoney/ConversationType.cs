@@ -1,4 +1,4 @@
-﻿namespace CryptoBank
+﻿namespace ModernMoney
 {
     public enum ConversationType
     {
