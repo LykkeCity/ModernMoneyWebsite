@@ -2,7 +2,7 @@ version: '3'
 
 services:
   lykkewebwallet:
-    image: cryptobankwebsite
+    image: modernmoneywebsite
     build:
       context: ./
       dockerfile: Dockerfile
