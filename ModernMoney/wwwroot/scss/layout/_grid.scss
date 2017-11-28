@@ -1,0 +1,120 @@
+$extra-gutter: 0.25;
+$gutter: 1% + $extra-gutter;
+
+.col-1 {
+  width: 6.333% - $extra-gutter*2;
+}
+
+.col-2 {
+  width: 14.667% - $extra-gutter*2;
+}
+
+.col-3 {
+  width: 23.0% - $extra-gutter*2;
+}
+
+.col-4 {
+  width: 31.333% - $extra-gutter*2;
+}
+
+.col-5 {
+  width: 39.667% - $extra-gutter*2;
+}
+
+.col-6 {
+  width: 48.0% - $extra-gutter*2;
+}
+
+.col-7 {
+  width: 56.333% - $extra-gutter*2;
+}
+
+.col-8 {
+  width: 64.667% - $extra-gutter*2;
+}
+
+.col-9 {
+  width: 73.0% - $extra-gutter*2;
+}
+
+.col-10 {
+  width: 81.333% - $extra-gutter*2;
+}
+
+.col-11 {
+  width: 89.667% - $extra-gutter*2;
+}
+
+.col-12 {
+  width: 98.0% - $extra-gutter*2;
+}
+
+//@for $i from 1 through 12 {
+//  .col-#{$i} { width: (8.333% * $i) - 2.5%}
+//}
+.row {
+  @extend .clearfix;
+
+  &.ng {
+    [class*="col-"] {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .col-1 {
+      width: 8.333%;
+    }
+
+    .col-2 {
+      width: 16.667%;
+    }
+
+    .col-3 {
+      width: 25.0%;
+    }
+
+    .col-4 {
+      width: 33.333%;
+    }
+
+    .col-5 {
+      width: 41.667%;
+    }
+
+    .col-6 {
+      width: 50.0%;
+    }
+
+    .col-7 {
+      width: 58.333%;
+    }
+
+    .col-8 {
+      width: 66.667%;
+    }
+
+    .col-9 {
+      width: 75.0%;
+    }
+
+    .col-10 {
+      width: 83.333%;
+    }
+
+    .col-11 {
+      width: 89.667%;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+  }
+}
+
+[class*="col-"] {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: $gutter;
+  margin-right: $gutter;
+}

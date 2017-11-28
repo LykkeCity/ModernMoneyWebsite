@@ -1,0 +1,242 @@
+/***********************************************************************************************************************
+					   Main styles
+***********************************************************************************************************************/
+.container {
+  //max-width: 1240px;
+  padding: 0 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  /*overflow: hidden;*/
+}
+
+@for $i from 1 through 40 {
+  .mt-#{$i*5} { margin-top: $i * 0.36rem}
+  .mb-#{$i*5} { margin-bottom: $i * 0.36rem}
+  .mr-#{$i*5} { margin-right: $i * 0.36rem}
+  .ml-#{$i*5} { margin-left: $i * 0.36rem}
+  .pt-#{$i*5} { padding-top: $i * 0.36rem}
+  .pb-#{$i*5} { padding-bottom: $i * 0.36rem}
+  .pr-#{$i*5} { padding-right: $i * 0.36rem}
+  .pl-#{$i*5} { padding-left: $i * 0.36rem}
+}
+
+html {
+  font-size: 1vw;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.divider {
+  margin: 0 auto;
+  width: 208px;
+  height: 2px;
+  border: 0;
+  background-color: $lightgray;
+}
+
+.error {
+    color: $red;
+}
+
+.email-wrapper-circle {
+  .row {
+    width: 80%;
+    margin: 0 auto;
+    
+    form > div:first-child {
+      position: relative;
+      text-align: center;
+
+      input[type="email"] {
+        padding: 12px 5px 12px 2.7rem;
+      }
+
+      i {
+        color: $input-border;
+        position: absolute;
+        top: 13px;
+        left: 14px;
+      }
+    }
+  }
+}
+
+.relative {
+  position: relative;
+}
+.blue-dot:after {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: $green;
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+}
+
+//body.blur-nav {
+//  overflow: hidden;
+//  .header,
+//  .footer,
+//  .wrapper,
+//  & >:not(.mobile-nav-module) {
+//    -webkit-filter: blur(5px);
+//    -moz-filter: blur(5px);
+//    -o-filter: blur(5px);
+//    -ms-filter: blur(5px);
+//    filter: blur(5px);
+//  }
+//}
+//
+//body.blur-popup {
+//  overflow: hidden;
+//  .header,
+//  .footer,
+//  .wrapper,
+//  & >:not(.popup-main-wrapper) {
+//    -webkit-filter: blur(5px);
+//    -moz-filter: blur(5px);
+//    -o-filter: blur(5px);
+//    -ms-filter: blur(5px);
+//    filter: blur(5px);
+//  }
+//}
+
+.underline {
+  text-decoration: underline;
+}
+
+.contact-module a {
+  line-height: 48px;
+}
+
+//.contact-module button {
+//  height: 44px;
+//  width: 44px;
+//}
+/***********************************************************************************************************************
+						Media Queries Desktop 1320
+***********************************************************************************************************************/
+@media (max-width: 1320px) {
+  html {
+    font-size: 1.1vw;
+  }
+  .contact-module a {
+    line-height: 42px;
+  }
+}
+/***********************************************************************************************************************
+						Media Queries Desktop 1110
+***********************************************************************************************************************/
+@media (max-width: 1110px) {
+  html {
+    font-size: 1.3vw;
+  }
+  .contact-module a {
+    line-height: 40px;
+  }
+}
+
+/***********************************************************************************************************************
+					  	Media Queries Tablet 1024
+***********************************************************************************************************************/
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  html {
+    font-size: 1.5vw;
+  }
+}
+
+/***********************************************************************************************************************
+					  	Media Queries Tablet 960
+***********************************************************************************************************************/
+@media (max-width: 960px) {
+  html {
+    font-size: 1.7vw;
+  }
+
+  .contact-module a {
+    line-height: 42px;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 768
+***********************************************************************************************************************/
+@media (max-width: 768px) {
+  html {
+    font-size: 2vw;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 600
+***********************************************************************************************************************/
+@media (max-width: 600px) {
+  html {
+    font-size: 2.7vw;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 480
+***********************************************************************************************************************/
+@media (max-width: 480px) {
+  html {
+    font-size: 3.5vw;
+  }
+
+  .email-wrapper-circle {
+    .row {
+      width: 100%;
+      margin: 0;
+    }
+    .col-10 {
+      width: 70%
+    }
+    .col-2 {
+      width: 25%
+    }
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 380
+***********************************************************************************************************************/
+@media (max-width: 380px) {}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 320
+***********************************************************************************************************************/
+@media (max-width: 320px) {
+  html {
+    font-size: 4.4vw;
+  }
+}

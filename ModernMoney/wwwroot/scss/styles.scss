@@ -1,0 +1,37 @@
+@import 'layout/reset';
+@import 'layout/grid';
+
+@import 'modules/mixins';
+@import 'modules/colors';
+@import 'modules/main';
+@import 'modules/fonts';
+@import 'modules/buttons';
+@import 'modules/images';
+@import 'modules/fontello';
+@import 'modules/typings';
+@import 'modules/_owl-carousel';
+@import 'modules/inputs';
+@import 'modules/toastr';
+
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/popup-join-beta';
+@import 'modules/popup-watch-the-video';
+@import 'modules/box-module';
+@import 'modules/tabs';
+@import 'modules/text-img';
+@import 'modules/road-map';
+@import 'modules/steps';
+@import 'modules/faq';
+@import 'modules/full-width-img-text';
+@import 'modules/small-icon-text';
+@import 'modules/app-carousel';
+@import 'modules/market';
+
+@import 'placeholder-home.scss';
+@import 'placeholder-debit-card.scss';
+@import 'placeholder-pay-bills.scss';
+@import 'placeholder-vault.scss';
+@import 'placeholder-how-to.scss';
+@import 'placeholder-feedback.scss';
+@import 'placeholder-for-partners.scss';

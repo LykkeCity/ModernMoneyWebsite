@@ -1,0 +1,64 @@
+.img-wrapper {
+  text-align: center;
+
+  &.h-120 {
+    height: 120px;
+  }
+}
+
+.img {
+  display: inline-block;
+  width: 100%;
+  
+  &.block {
+    display: block;
+  }
+
+  &.mw-70 {
+    max-width: 70px;
+  }
+
+  &.mw-93 {
+    max-width: 93px;
+  }
+
+  &.mw-97 {
+    max-width: 97px;
+  }
+
+  &.mw-110 {
+    max-width: 110px;
+  }
+
+  &.mw-120 {
+    max-width: 120px;
+  }
+
+  &.mw-160 {
+    max-width: 160px;
+  }
+
+  &.mw-200 {
+    max-width: 200px;
+  }
+
+  &.mw-300 {
+    max-width: 300px;
+  }
+
+  &.mw-400 {
+    max-width: 400px;
+  }
+
+  &.mw-500 {
+    max-width: 500px;
+  }
+
+  &.mw-600 {
+    max-width: 600px;
+  }
+
+  &.min-h-93 {
+    min-height: 93px;
+  }
+}

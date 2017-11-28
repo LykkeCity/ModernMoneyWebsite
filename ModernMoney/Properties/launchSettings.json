@@ -1,0 +1,28 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:49383/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "SettingsUrl": "http://13.95.227.175/e94fdabc-5031-4e1b-a838-e18b218c9afa_CryptoBankWebsite",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "CryptoBank": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:49384/"
+    }
+  }
+}

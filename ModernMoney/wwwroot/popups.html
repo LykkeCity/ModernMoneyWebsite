@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="dist/css/styles.css">
+</head>
+
+<body>
+    <!-- Popup Join Beta -->
+    <div id="popup-join-beta">
+        <div class="row title">
+            <div class="col-12">
+                <img src="img/lykke_logo_white.png" alt="Lykke Logo" class="logo-img">
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-7 left-column">
+                <h1 class="heading-s">
+                    Thanks for being interested in joining our BETA testing program!
+                </h1>
+                <p>
+                    Add your email and you will receive an activation link.
+                </p>
+                <p>
+                    If you don't know how to use TestFlight,
+                    <br> you can find all the information
+                    <a href="#">here</a>
+                </p>
+                <p>
+                    <sup>*</sup>
+                    <span class="text-s">This is testing environment</span>
+                </p>
+            </div>
+            <div class="col-5 right-column">
+                <div class="form">
+                    <div class="title">
+
+                    </div>
+                    <div class="content">
+                        <h2 class="heading-xs">Get Started AA</h2>
+                        <div class="email-wrapper">
+                            <form action="/api/beta" method="post">
+                                <input type="email" name="Email" placeholder="E-mail address" required>
+                                <input type="hidden" name="Dummy" value="" />
+                                <i class="icon-asset-7"></i>
+                                <button class="btn-md btn-blue-bg" type="button" onclick="app.FeedbackForm.submit(this)">Join</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ Popup Join Beta -->
+
+    <!-- Popup Watch the video -->
+    <div id="popup-watch-the-video">
+        <div class="row">
+            <div class="col-12">
+                <video width="100%" height="100%" controls preload>
+                    <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+                    <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+        </div>
+    </div>
+    <!--/ Popup Watch the video -->
+</body>
+
+</html>

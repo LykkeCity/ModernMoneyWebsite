@@ -1,0 +1,68 @@
+$lightblue: #05a8fc;
+$middlegray: #95989a;
+$lightgray: #f5f6f7;
+$activeslidegray: #aaaaaa;
+$purple-blue-gradient: linear-gradient(266deg, #3dc6f3, #4c3494);
+
+$heading-color: #333;
+$text-color: #3f4d60;
+
+$input-border: #d1d1d1;
+
+$white: #fefefe;
+$red: #a94442;
+$greenTitle: #20d330;
+$green: #33cc8b;
+$darkGreen: #335045;
+
+.lightblue-bg {
+  background: $lightblue;
+}
+
+.lightgray-bg {
+  background: $lightgray;
+}
+
+.purple-blue-bg {
+  background: $heading-color;
+}
+
+.green-bg {
+  background: $green;
+}
+
+.darkgreen-bg {
+  background: $darkGreen;
+}
+
+.white-bg {
+  background: $white;
+}
+
+.font-darkgray {
+  color: $heading-color;
+}
+
+.font-gray {
+  color: $text-color;
+}
+
+.font-middlegray {
+  color: $middlegray;
+}
+
+.font-lightgray {
+  color: $lightgray;
+}
+
+.font-white {
+  color: #fff;
+}
+
+.font-lightblue {
+  color: $lightblue;
+}
+
+.font-green {
+    color: $green;
+}

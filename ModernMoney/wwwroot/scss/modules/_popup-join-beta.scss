@@ -1,0 +1,251 @@
+#popup-join-beta {
+
+    @include border-radius(10px);
+    @include popup-shadow;
+    background: $white;
+    height: 100%;
+
+    .title {
+        background: $green;
+        text-align: center;
+        min-height: 1rem;
+    }
+
+    .row {
+        &.title {
+          background: $heading-color;
+            @include border-top-radius(10px);
+            padding: .6rem 0;
+        }
+
+        &.content {
+            padding: 2rem;
+            @include border-radius(10px);
+            background-color: #fefefe;
+            .right-column {
+                .form {
+                    @include border-radius(10px);
+                    @include popup-shadow;
+
+                    .title {
+                        @include border-top-radius(10px);
+                    }
+
+                    .content {
+                        padding: 2rem 1rem;
+
+                        h2 {
+                            text-align: center;
+                        }
+
+                        .email-wrapper {
+                            position: relative;
+                            text-align: center;
+
+                            input[type="email"] {
+                                @include border-radius(5px);
+                                border: 1px solid $input-border;
+                                padding: 5px 5px 5px 2rem;
+                                width: 100%;
+                                display: block;
+                                margin: 1rem auto;
+                                margin-bottom: 0;
+                            }
+
+                            i {
+                                color: $input-border;
+                                position: absolute;
+                                top: 7px;
+                                left: 7px;
+                            }
+
+                            button {
+                                margin-top: 1rem;
+                                margin-bottom: .3rem;
+                                max-width: none;
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    .success {
+                        display: none;
+                        text-align: center;
+                        padding: 2rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popup-main-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  transform: translate(0, -50%);
+  z-index: 100;
+  border-radius: 10px;
+  &.video {
+    height: 45%;
+    border-radius: 0;
+    //padding: 2px;
+    background: transparent;
+  }
+  &.join {
+    height: auto;
+  }
+}
+
+.popup-certain {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-close {
+  position: fixed;
+  top: -15%;
+  right: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  z-index: 111;
+  cursor: pointer;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    left: 14px;
+    background: #fff;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 1320
+***********************************************************************************************************************/
+@media (max-width: 1320px) {}
+
+/***********************************************************************************************************************
+					  	Media Queries Tablet 1024
+***********************************************************************************************************************/
+@media (max-width: 1024px) {
+  .popup-main-wrapper.video {
+    height: 42%;
+    left: 20%;
+    right: 20%;
+  }
+}
+/***********************************************************************************************************************
+					  	Media Queries Tablet 960
+***********************************************************************************************************************/
+@media (max-width: 960px) {
+  .popup-main-wrapper.join {
+    left: 10%;
+    right: 10%;
+  }
+
+  .popup-main-wrapper.video {
+    .popup-close {
+      top: -45px;
+      right: 0px;
+    }
+  }
+}
+/***********************************************************************************************************************
+						Media Queries Desktop 768
+***********************************************************************************************************************/
+@media (max-width: 768px) {
+  #popup-join-beta {
+    .col-7, .col-5 {
+      width: 100%;
+    }
+    .col-7 {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .popup-close {
+    top: 50%;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: translate(0, -50%);
+
+    &:before, &:after {
+      height: 20px;
+    }
+  }
+
+
+  .popup-main-wrapper {
+    &.video {
+      height: 80%;
+      left: 10%;
+      right: 10%;
+
+      .popup-close {
+        top: -15px;
+        right: 3px;
+      }
+    }
+
+    &.join {
+      left: 10%;
+      right: 10%;
+      height: 65%;
+      overflow-y: auto;
+
+    }
+  }
+
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 600
+***********************************************************************************************************************/
+@media (max-width: 600px) {
+
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 480
+***********************************************************************************************************************/
+@media (max-width: 480px) {
+  .popup-main-wrapper.join {
+    height: 80%;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 380
+***********************************************************************************************************************/
+@media (max-width: 380px) {}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 320
+***********************************************************************************************************************/
+@media (max-width: 320px) {}

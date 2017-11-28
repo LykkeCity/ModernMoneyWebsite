@@ -1,0 +1,8 @@
+/ModernMoney/bin
+/ModernMoney/obj
+/ModernMoney/.idea
+/ModernMoney/wwwroot/.vscode
+/ModernMoney/wwwroot/node_modules
+/ModernMoney/wwwroot/dist
+/.vs
+/.idea

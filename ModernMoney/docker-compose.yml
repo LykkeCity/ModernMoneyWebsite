@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  lykkewebwallet:
+    image: cryptobankwebsite
+    build:
+      context: ./
+      dockerfile: Dockerfile
