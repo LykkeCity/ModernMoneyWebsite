@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
 
-namespace CryptoBank.Controllers
+namespace ModernMoney.Controllers
 {
 
     [Route("[action]")]

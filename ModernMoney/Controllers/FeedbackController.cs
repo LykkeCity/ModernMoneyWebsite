@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CryptoBank.Models;
+using ModernMoney.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.Linq;
 
-namespace CryptoBank.Controllers
+namespace ModernMoney.Controllers
 {
     [Route("api/[controller]")]
     public class FeedbackController : BaseController

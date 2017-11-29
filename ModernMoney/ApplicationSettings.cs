@@ -1,9 +1,9 @@
-﻿using CryptoBank.Infrastructure;
+﻿using ModernMoney.Infrastructure;
 using Lykke.SettingsReader;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace CryptoBank
+namespace ModernMoney
 {
     public static class ApplicationSettings
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CryptoBank.Models
+namespace ModernMoney.Models
 {
     public class FeedbackModel:BaseForm
     {

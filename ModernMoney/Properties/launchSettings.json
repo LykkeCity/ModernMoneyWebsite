@@ -16,10 +16,11 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CryptoBank": {
+    "ModernMoney": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
+        "SettingsUrl": "http://settings.lykke-settings.svc.cluster.local/e94fdabc-5031-4e1b-a838-e18b218c9afa_CryptoBankWebsite",
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:49384/"

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CryptoBank
+namespace ModernMoney
 {
     public class Program
     {

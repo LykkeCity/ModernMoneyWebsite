@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CryptoBank.Controllers
+namespace ModernMoney.Controllers
 {
     public class BaseController : Controller
     {
