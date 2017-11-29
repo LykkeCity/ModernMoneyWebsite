@@ -23,7 +23,7 @@
                 <p>
                     If you don't know how to use TestFlight,
                     <br> you can find all the information
-                    <a href="#">here</a>
+                    <a href="/how-to">here</a>
                 </p>
                 <p>
                     <sup>*</sup>
@@ -39,7 +39,7 @@
                         <h2 class="heading-xs">Get Started AA</h2>
                         <div class="email-wrapper">
                             <form action="/api/beta" method="post">
-                                <input type="email" name="Email" placeholder="E-mail address" required>
+                                <input type="email" name="Email" placeholder="E-mail address" keydown="app.FeedbackForm.keydown(this)" required>
                                 <input type="hidden" name="Dummy" value="" />
                                 <i class="icon-asset-7"></i>
                                 <button class="btn-md btn-blue-bg" type="button" onclick="app.FeedbackForm.submit(this)">Join</button>

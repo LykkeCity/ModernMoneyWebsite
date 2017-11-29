@@ -52,7 +52,7 @@
                     }
                 }
             });
-        }
+        },
     };
 
     app.FeedbackForm = FeedbackForm;

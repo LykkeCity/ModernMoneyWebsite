@@ -29,6 +29,7 @@
 
                     .title {
                         @include border-top-radius(10px);
+                        background: $green !important;
                     }
 
                     .content {

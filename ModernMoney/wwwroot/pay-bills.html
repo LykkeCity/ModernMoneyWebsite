@@ -261,7 +261,7 @@
                 <p class="text-md font-gray pb-20">Get our latest news right in your mailbox</p>
                 <div class="email-wrapper-circle">
                   <div class="row">
-                      <form action="/api/newsletter" method="post" class="clearfix">
+                      <form action="/api/newsletter" method="post"  onkeypress="return event.keyCode != 13;" class="clearfix">
                           <div class="col-10">
                               <input type="email" name="Email" placeholder="E-mail address" required>
                               <i class="icon-asset-74"></i>
@@ -307,7 +307,7 @@
           <p class="text-xs font-gray">Get our latest news right in your mailbox</p>
           <div class="email-wrapper-circle">
             <div class="row ng">
-                <form action="/api/newsletter" method="post" class="clearfix">
+                <form action="/api/newsletter" onkeypress="return event.keyCode != 13;" method="post" class="clearfix">
                     <div class="col-10">
                         <input type="email" name="Email" placeholder="E-mail address" required>
                         <i class="icon-asset-74"></i>
