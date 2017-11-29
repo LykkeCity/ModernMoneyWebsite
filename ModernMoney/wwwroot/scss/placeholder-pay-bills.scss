@@ -1,3 +1,9 @@
+.pay-bills-header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/Pay_Bills/image_header.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
 .module-placeholder-pay-bills {
   .box-click {
     cursor: pointer;

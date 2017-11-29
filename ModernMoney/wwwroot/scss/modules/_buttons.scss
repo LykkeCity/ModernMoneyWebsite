@@ -81,7 +81,6 @@
 .btn-blue-white-border-bg {
   background: $green;
   color: #fff;
-  border: 2px solid #fff;
   line-height: 55px;
   transition: background-color 0.2s ease-in-out;
 
@@ -110,7 +109,8 @@
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: #2db47b;
+    background-color: $green;
+    color: $white;
   }
 }
 
