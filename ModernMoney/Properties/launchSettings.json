@@ -12,7 +12,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "SettingsUrl": "http://13.95.227.175/e94fdabc-5031-4e1b-a838-e18b218c9afa_CryptoBankWebsite",
+        "SettingsUrl": "http://13.95.227.175/3638142e-1d68-497a-ac7c-1f7d9d269aac_ModernMoneyWebsite",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },

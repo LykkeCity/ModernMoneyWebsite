@@ -8,10 +8,10 @@ namespace ModernMoney
         public static void Store(ITableEntity conversation)
         {
             CloudTableClient tableClient = new CloudTableClient(
-               new Uri(ApplicationSettings.AppSettings.CryptoBankWebsite.AzureStorage.Uri),
+               new Uri(ApplicationSettings.AppSettings.ModernMoneyWebsite.AzureStorage.Uri),
                new Microsoft.WindowsAzure.Storage.Auth.StorageCredentials(
-                   ApplicationSettings.AppSettings.CryptoBankWebsite.AzureStorage.AccountName,
-                   ApplicationSettings.AppSettings.CryptoBankWebsite.AzureStorage.AccountKey));
+                   ApplicationSettings.AppSettings.ModernMoneyWebsite.AzureStorage.AccountName,
+                   ApplicationSettings.AppSettings.ModernMoneyWebsite.AzureStorage.AccountKey));
 
             CloudTable table = tableClient.GetTableReference("Conversation");
             table.CreateIfNotExistsAsync();

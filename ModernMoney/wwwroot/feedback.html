@@ -188,7 +188,7 @@
                                     <div class="row">
                                         <form action="/api/newsletter" onkeypress="return event.keyCode != 13;" method="post" class="clearfix">
                                             <div class="col-10">
-                                                <input type="email" name="Email" placeholder="E-mail address" required>
+                                                <input type="email" name="Email" placeholder="E-mail address" required onblur="app.FeedbackForm.isEmailValid(this)">
                                                 <i class="icon-asset-74"></i>
                                                 <div class="error left pl-10 text-xs"></div>
                                             </div>
@@ -235,7 +235,7 @@
                         <div class="row ng">
                             <form action="/api/newsletter" onkeypress="return event.keyCode != 13;" method="post" class="clearfix">
                                 <div class="col-10">
-                                    <input type="email" name="Email" placeholder="E-mail address" required>
+                                    <input type="email" name="Email" placeholder="E-mail address" required onblur="app.FeedbackForm.isEmailValid(this)">
                                     <i class="icon-asset-74"></i>
                                     <div class="error left pl-10 text-xs"></div>
                                 </div>

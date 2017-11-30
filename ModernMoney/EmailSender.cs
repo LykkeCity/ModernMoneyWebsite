@@ -18,15 +18,15 @@ namespace ModernMoney
         {
             var client = new SmtpClient();
 
-            client.UseDefaultCredentials = ApplicationSettings.AppSettings.CryptoBankWebsite.Email.UseDefaultCredentials;
-            client.Host = ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Host;
-            client.Port = ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Port;
-            client.EnableSsl = ApplicationSettings.AppSettings.CryptoBankWebsite.Email.EnableSsl;
+            client.UseDefaultCredentials = ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.UseDefaultCredentials;
+            client.Host = ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Host;
+            client.Port = ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Port;
+            client.EnableSsl = ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.EnableSsl;
 
             client.Credentials =
                 new NetworkCredential(
-                    ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Credentials.Username,
-                    ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Credentials.Password);
+                    ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Username,
+                    ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Password);
 
             return client;
         }
@@ -37,23 +37,23 @@ namespace ModernMoney
         public static void SendFeedback(FeedbackModel feedback) {
 
             CreateMailClient().Send(
-               ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Credentials.Username,
-               ApplicationSettings.AppSettings.CryptoBankWebsite.Email.FeedbackRecipient,
-               ApplicationSettings.AppSettings.CryptoBankWebsite.Email.FeedbackSubject, 
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Username,
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.FeedbackRecipient,
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.FeedbackSubject, 
                 feedback.Message);
         }
 
         public static void SendBeta(IHostingEnvironment env, BetaModel beta)
         {
-            MailAddress from = new MailAddress(ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Credentials.Username, "");
+            MailAddress from = new MailAddress(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Username, "");
             MailAddress to = new MailAddress(beta.Email, "");
 
             MailMessage message = new MailMessage(from, to);
            
             message.IsBodyHtml = true;
-            message.Subject = ApplicationSettings.AppSettings.CryptoBankWebsite.Email.JoinBetaSubject;
+            message.Subject = ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.JoinBetaSubject;
 
-            message.Body = FileHelper.Load(env, ApplicationSettings.AppSettings.CryptoBankWebsite.Email.TemplatesFolder, "email-join-beta.html");
+            message.Body = FileHelper.Load(env, ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.TemplatesFolder, "email-join-beta.html");
 
             CreateMailClient().Send(message);
 

@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ModernMoney.Infrastructure
+﻿namespace ModernMoney.Infrastructure
 {
     public class AppSettings
     {
-        public CryptoBankWebsite CryptoBankWebsite {get;set;}
+        public ModernMoneyWebsite ModernMoneyWebsite {get;set;}
     }
 
-    public class CryptoBankWebsite
+    public class ModernMoneyWebsite
     {
         public AzureStorage AzureStorage { get; set; }
         public Email Email { get; set; }

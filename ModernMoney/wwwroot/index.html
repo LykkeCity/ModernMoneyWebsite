@@ -412,13 +412,17 @@
 
                                         <form action="/api/newsletter" method="post"  onkeypress="return event.keyCode != 13;" class="clearfix">
                                             <div class="col-10">
-                                                <input type="email" name="Email" placeholder="E-mail address" required>
+                                                <input id="Email" 
+                                                type="email" name="Email" placeholder="E-mail address" required 
+                                                onblur="app.FeedbackForm.isEmailValid(this)">
                                                 <i class="icon-asset-74"></i>
                                                 <div class="error left pl-10 text-xs"></div>
                                             </div>
                                             <input type="hidden" name="Dummy" value="" />
                                             <div class="col-2">
-                                                <button class="btn-md btn-blue-bg btn-circle-md" type="button" onclick="app.FeedbackForm.submit(this)">
+                                                <button class="btn-md btn-blue-bg btn-circle-md" 
+                                                    type="button" 
+                                                    onclick="app.FeedbackForm.submit(this)">
                                                     <i class="icon-asset-73"></i>
                                                 </button>
                                             </div>
@@ -458,7 +462,7 @@
                         <div class="row">
                             <form action="/api/newsletter" method="post"  onkeypress="return event.keyCode != 13;" class="clearfix">
                                 <div class="col-10">
-                                    <input type="email" name="Email" placeholder="E-mail address" required>
+                                    <input type="email" name="Email" placeholder="E-mail address" required onblur="app.FeedbackForm.isEmailValid(this)">
                                     <i class="icon-asset-74"></i>
                                     <div class="error left pl-10 text-xs"></div>
                                 </div>

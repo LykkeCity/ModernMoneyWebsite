@@ -8,7 +8,8 @@
             var feedbackForm = $(theform).parents('form');
             var errorLabel = feedbackForm.find('.error');
             var action = feedbackForm.attr('action');
-            theform.disabled = true;
+            //theform.disabled = true;
+            //if(!feedbackForm[0].checkValidity()) return false;
 
             $.ajax({
                 type: "POST",
@@ -53,6 +54,19 @@
                 }
             });
         },
+
+        isEmailValid: function(theInput) {
+           
+            var newsLetterForm = $(theInput).parents('form');
+            var theButton = newsLetterForm.find('button:first')[0];
+
+            if(!theInput.checkValidity()) {
+                theButton.disabled = true;
+            }else{
+                theButton.disabled = false;
+            }
+
+        }
     };
 
     app.FeedbackForm = FeedbackForm;

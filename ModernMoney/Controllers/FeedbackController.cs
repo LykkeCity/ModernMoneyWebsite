@@ -30,7 +30,7 @@ namespace ModernMoney.Controllers
             EmailSender.SendFeedback(feedback);
             AzureStorageHelper.Store(feedback);
 
-            return Ok(ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Messages.Feedback);
+            return Ok(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Messages.Feedback);
         }
 
     }

@@ -28,7 +28,7 @@ namespace ModernMoney.Controllers
             EmailSender.SendBeta(_Env, beta);
             AzureStorageHelper.Store(beta);
      
-            return Ok(ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Messages.Beta);
+            return Ok(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Messages.Beta);
         }
     }
 }

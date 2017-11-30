@@ -26,7 +26,7 @@ namespace ModernMoney.Controllers
 
             AzureStorageHelper.Store(newsletter);
 
-            return Ok(ApplicationSettings.AppSettings.CryptoBankWebsite.Email.Messages.Newsletter);
+            return Ok(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Messages.Newsletter);
         }
     }
 }
