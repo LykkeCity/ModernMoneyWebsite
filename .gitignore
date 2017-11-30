@@ -6,3 +6,5 @@
 /ModernMoney/wwwroot/dist
 /.vs
 /.idea
+**/launchSettings.json
+**/appsettings.*.json
