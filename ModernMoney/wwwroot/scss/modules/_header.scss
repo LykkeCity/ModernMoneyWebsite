@@ -111,37 +111,10 @@
 ***********************************************************************************************************************/
 
 .module-placeholder-header {
-  //height: 720px;
   height: 38rem;
   .container {
     padding-top: 3.7rem;
   }
-  /*
-  &.debit-card-header,
-  &.pay-bills-header {
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0.4;
-      background-size: cover !important;
-    }
-  }
-  &.debit-card-header {
-    &:after {
-      background: url('../../img/Debit_Card/header_image.jpg') no-repeat center bottom;
-    }
-  }
-  &.pay-bills-header {
-    &:after {
-      background: url('../../img/Pay_Bills/image_header.jpg') no-repeat center bottom;
-    }
-  }
-  */
 }
 
 .header-content-heading {
