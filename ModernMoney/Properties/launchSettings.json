@@ -12,7 +12,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "SettingsUrl": "http://13.95.227.175/3638142e-1d68-497a-ac7c-1f7d9d269aac_ModernMoneyWebsite",
+        "SettingsUrl": "",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
@@ -20,7 +20,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "SettingsUrl": "http://settings.lykke-settings.svc.cluster.local/3638142e-1d68-497a-ac7c-1f7d9d269aac_ModernMoneyWebsite",
+        "SettingsUrl": "",
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:49384/"
