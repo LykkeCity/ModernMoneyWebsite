@@ -58,14 +58,16 @@
         isEmailValid: function(theInput) {
            
             var newsLetterForm = $(theInput).parents('form');
+            var errorLabel = newsLetterForm.find('.error');
             var theButton = newsLetterForm.find('button:first')[0];
 
             if(!theInput.checkValidity()) {
+                errorLabel.html('The email you entered is not valid');
                 theButton.disabled = true;
             }else{
+                errorLabel.html('');
                 theButton.disabled = false;
             }
-
         }
     };
 
