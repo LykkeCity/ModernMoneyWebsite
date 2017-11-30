@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ModernMoney.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/feedback")]
     public class FeedbackController : BaseController
     {
         public FeedbackController(IHostingEnvironment envrnmt) : base(envrnmt) { }

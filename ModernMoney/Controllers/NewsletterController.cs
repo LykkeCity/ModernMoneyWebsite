@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ModernMoney.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/newsletter")]
     public class NewsletterController : BaseController
     {
 

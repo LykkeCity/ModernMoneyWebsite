@@ -6,13 +6,13 @@ using System.Linq;
 
 namespace ModernMoney.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/beta")]
     public class BetaController : BaseController
     {
 
         public BetaController(IHostingEnvironment envrnmt) :base(envrnmt) {}
 
-        // POST api/newsletter
+        // POST api/beta
         [HttpPost]
         public IActionResult Post([FromForm]BetaModel beta)
         {
