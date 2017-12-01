@@ -3,7 +3,6 @@
     @include popup-shadow;
     background: $white;
     height: 100%;
-
     .popup-close {
         position: absolute;
         top: 0;
@@ -14,21 +13,18 @@
             @include border-top-radius(10px);
             padding: .6rem 0;
             text-align: center;
-            
-                                img {
-                                    width: 227px;
-                                }
+            img {
+                width: 227px;
+            }
         }
         &.content {
             padding: 2rem;
             @include border-radius(10px);
             background-color: #fefefe;
             .form {
-
                 .title {
                     @include border-top-radius(10px);
                     background: $green !important;
-                   
                 }
                 .content {
                     padding: 2rem 1rem;
@@ -38,7 +34,6 @@
                     .wrapper {
                         form {
                             .row {
-                                
                                 text-align: left;
                                 .field-wrapper {
                                     position: relative;
@@ -63,8 +58,9 @@
                                     max-width: 170px;
                                     width: 80%;
                                 }
-
-                                .button-wrapper {text-align: center;}
+                                .button-wrapper {
+                                    text-align: center;
+                                }
                                 #recaptcha-placeholder {
                                     &>div {
                                         margin: 0 auto;
