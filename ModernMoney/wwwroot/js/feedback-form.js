@@ -62,7 +62,7 @@
             var theButton = newsLetterForm.find('button:first')[0];
 
             if(!theInput.checkValidity()) {
-                errorLabel.html('The email you entered is not valid');
+                errorLabel.html('Please enter correct email address');
                 theButton.disabled = true;
             }else{
                 errorLabel.html('');
