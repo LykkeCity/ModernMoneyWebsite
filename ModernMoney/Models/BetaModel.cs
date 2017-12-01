@@ -10,7 +10,7 @@ namespace ModernMoney.Models
         }
 
         [Required]
-        [EmailAddress(ErrorMessage = "Please enter valid e-mail address")]
+        [EmailAddress(ErrorMessage = "Please enter correct email address")]
         public string Email { get; set; }
     }
 }

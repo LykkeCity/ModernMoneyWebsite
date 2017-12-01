@@ -2,21 +2,22 @@
 
 namespace ModernMoney.Models
 {
-    public class FeedbackModel:BaseForm
+    public class ContactModel: BaseForm
     {
-        public FeedbackModel()
+        public ContactModel()
         {
-            ConversationTypeDesc = ConversationType.Feedback.ToString();
+            ConversationTypeDesc = ConversationType.Contact.ToString();
         }
 
         [Required]
-        public string FirstName { get; set; }
+        public string FullName { get; set; }
+
         [Required]
-        public string LastName { get; set; }
+        public string PhoneNumber { get; set; }
+
         [Required]
         [EmailAddress(ErrorMessage = "Please enter correct email address")]
         public string Email { get; set; }
         public string Message { get; set; }
-        
     }
 }

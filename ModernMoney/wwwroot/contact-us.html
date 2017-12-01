@@ -15,6 +15,9 @@
     <link rel="icon" href="mm_favicon_48x48.png" sizes="48x48">
 
     <script type="text/javascript">
+    window.onload = function(){
+        window.history.back();
+    };
         var onloadCallback = function () {
             grecaptcha.render("recaptcha-placeholder", {
                 "sitekey": "6LdyHjsUAAAAAHr8KOBo6Ib9fiqUkKhXP4xoM35c"
@@ -42,8 +45,7 @@
                     <div class="content">
                         <div class="wrapper">
                             <h1 class="heading-s pb-20 font-darkgray center">How can we help?</h1>
-                            <form action="https://partners-dev.lykkex.net/api/contacts/sendContact" method="post" onkeypress="return event.keyCode != 13;"
-                                novalidate>
+                            <form action="/api/contact" method="post">
                                 <div class="row field pb-20">
                                     <div class="col-12">
                                         <label for="FullName">Name:</label>

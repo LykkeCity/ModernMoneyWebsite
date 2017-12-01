@@ -43,6 +43,16 @@ namespace ModernMoney
                 feedback.Message);
         }
 
+        public static void SendContact(ContactModel contact)
+        {
+
+            CreateMailClient().Send(
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Username,
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.FeedbackRecipient,
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.FeedbackSubject,
+                contact.Message);
+        }
+
         public static void SendBeta(IHostingEnvironment env, BetaModel beta)
         {
             MailAddress from = new MailAddress(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Username, "");

@@ -4,6 +4,7 @@
     {
         JoinBeta,
         Feedback,
-        Newsletter
+        Newsletter,
+        Contact
     }
 }

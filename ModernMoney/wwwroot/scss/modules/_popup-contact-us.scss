@@ -3,6 +3,11 @@
     @include popup-shadow;
     background: $white;
     height: 100%;
+
+    .popup-close {
+        position: absolute;
+        top: 0;
+    }
     .row {
         &.title {
             background: $green;
@@ -41,7 +46,7 @@
                                 input {
                                     @include border-radius(5px);
                                     border: 1px solid $input-border;
-                                    padding: 12px 12px 12px 2rem;
+                                    padding: 12px 12px 12px 2.5rem;
                                     width: 100%;
                                     display: block;
                                     margin: 1rem auto;
