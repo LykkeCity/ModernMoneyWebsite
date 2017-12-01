@@ -53,6 +53,16 @@ namespace ModernMoney
                 contact.Message);
         }
 
+        public static void SendBetaNotification(BetaModel contact)
+        {
+
+            CreateMailClient().Send(
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Username,
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.FeedbackRecipient,
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.JoinBetaSubject,
+                string.Format(@"{0} has joined beta.", contact.Email));
+        }
+
         public static void SendBeta(IHostingEnvironment env, BetaModel beta)
         {
             MailAddress from = new MailAddress(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Username, "");
