@@ -43,8 +43,23 @@ var app = app || {};
 
         popup.className = "popup-main-wrapper";
         popupCertain.className = "popup-certain";
-        popup.className += type === 'joinUs' ? ' join' : ' video';
-        popup.innerHTML = type === 'joinUs' ? Templates.joinUs: Templates.videoYT;
+
+        // Old code
+        // popup.className += type === 'joinUs' ? ' join' : ' video';
+        // popup.innerHTML = type === 'joinUs' ? Templates.joinUs: Templates.videoYT;
+
+        if (type === 'joinUs' ) {
+            popup.className += ' join';
+            popup.innerHTML = Templates.joinUs;
+
+        }else if(type === 'contactUs'){
+            popup.className += ' contact';
+            popup.innerHTML = Templates.contactUs;
+        }else{
+            popup.className += ' video';
+            popup.innerHTML = Templates.videoYT;
+        }
+        
 
         doc.body.appendChild(popupCertain);
         doc.body.appendChild(popup);
@@ -56,6 +71,8 @@ var app = app || {};
         self.closePopup = self.closePopup.bind(self);
         self.events.on(certain, 'click', self.closePopup);
         self.events.on(close, 'click', self.closePopup);
+
+        window.grecaptcha.render("recaptcha-placeholder", { "sitekey" : "6LdyHjsUAAAAAHr8KOBo6Ib9fiqUkKhXP4xoM35c" });
 
     };
 

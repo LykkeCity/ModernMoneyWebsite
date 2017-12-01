@@ -11,7 +11,7 @@ var gulp  = require('gulp'),
     input  = {
       'sass': 'scss/**/*.scss',
       'javascript': 'js/**/*.js',
-      'jsorder': ['js/vendors/jquery-1.9.1.min.js', 'js/polyfill.js', 'js/events.js', 'js/templates.js', 'js/vendors/toastr.min.js', 'js/base-view.js', 'js/main.js', 'js/tabs-view.js', 'js/popups-view.js', 'js/scrollLibrary-view.js', 'js/navigation-view.js', 'js/market-view.js', 'js/feedback-form.js']
+      'jsorder': ['js/vendors/jquery-1.9.1.min.js', 'js/polyfill.js', 'js/events.js', 'js/templates.js', 'js/vendors/toastr.min.js', 'js/base-view.js', 'js/main.js', 'js/tabs-view.js', 'js/popups-view.js', 'js/scrollLibrary-view.js', 'js/navigation-view.js', 'js/market-view.js', 'js/feedback-form.js', , 'js/contact-form.js']
 
     },
 
