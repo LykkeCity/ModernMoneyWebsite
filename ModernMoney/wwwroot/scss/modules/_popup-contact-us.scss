@@ -19,6 +19,7 @@
         }
         &.content {
             padding: 2rem;
+            padding-bottom: 0;
             @include border-radius(10px);
             background-color: #fefefe;
             .form {
