@@ -76,7 +76,7 @@
 }
 
 #for-partners-page {
-    .popup-main-wrapper {
+    .popup-main-wrapper.contact {
         left: 33%;
         right: 33%;
     }
@@ -102,7 +102,7 @@
 
 @media (max-width: 1320px) {
     #for-partners-page {
-        .popup-main-wrapper {
+        .popup-main-wrapper.contact {
             left: 25%;
             right: 25%;
         }
@@ -130,7 +130,7 @@
 
 @media (max-width: 768px) {
     #for-partners-page {
-        .popup-main-wrapper {
+        .popup-main-wrapper.contact {
             left: 15%;
             right: 15%;
         }
@@ -297,7 +297,7 @@
 
 @media (max-width: 480px) {
     #for-partners-page {
-        .popup-main-wrapper {
+        .popup-main-wrapper.contact {
             left: 5%;
             right: 5%;
         }
