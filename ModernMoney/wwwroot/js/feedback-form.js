@@ -8,7 +8,7 @@
             var feedbackForm = $(theform).parents('form');
             var errorLabel = feedbackForm.find('.error');
             var action = feedbackForm.attr('action');
-            //theform.disabled = true;
+            theform.disabled = true;
             //if(!feedbackForm[0].checkValidity()) return false;
 
             $.ajax({
@@ -51,6 +51,9 @@
                     } else {
                         errorLabel.html(XMLHttpRequest.responseText);
                     }
+                },
+                complete: function() {
+                    theform.disabled = false;
                 }
             });
         },

@@ -80,6 +80,19 @@
         left: 33%;
         right: 33%;
     }
+
+    .section-ul {
+        margin: 1rem 2.1rem;
+    }
+    
+    .section-li {
+        list-style: disc;
+        padding-bottom: 0.3rem;
+        
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+    }
 }
 
 
