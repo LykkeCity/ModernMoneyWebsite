@@ -1,0 +1,19 @@
+.step{
+    @include step-shadow;
+    margin: 0 auto;
+    max-width: 670px;
+
+    &.step-three {
+        box-shadow: none;
+
+        .img {
+            @include border-radius(5px);
+            @include step-shadow;
+        }
+    }
+
+    &.step-five,
+    &.step-six {
+        margin-bottom: 60px;
+    }
+}

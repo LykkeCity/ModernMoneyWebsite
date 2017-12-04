@@ -1,0 +1,16 @@
+<svg width="34.88" height="34.88" xmlns="http://www.w3.org/2000/svg">
+ <title>Asset 60</title>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="Layer_2">
+   <g id="Layer_1-2">
+    <path fill="#ffffff" id="svg_1" d="m29.89,29.63a17.46,17.46 0 1 0 -0.26,0.26a1,1 0 0 0 0.16,-0.1a0.92,0.92 0 0 0 0.1,-0.16zm-10,-11.19l13,0a15.35,15.35 0 0 1 -3.89,9.17l-9.11,-9.17zm13,-2l-14.45,0l0,-14.39a15.44,15.44 0 0 1 14.39,14.39l0.06,0zm-30.83,1a15.45,15.45 0 0 1 14.38,-15.39l0,15.39a1,1 0 0 0 0.29,0.71l10.88,10.85a15.41,15.41 0 0 1 -25.61,-11.56l0.06,0z"/>
+   </g>
+  </g>
+ </g>
+</svg>

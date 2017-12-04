@@ -1,0 +1,393 @@
+.header {
+    &.for-partners {
+        .nav-link {
+            color: rgba(255, 255, 255, 0.4);
+            &:hover,
+            &.active {
+                color: $white;
+            }
+        }
+    }
+}
+
+.for-partners-header {
+    background-image: url('../../img/For_Partners/hand_phone_header.png'), url('../../img/For_Partners/for_partners_banner.png');
+    background-size: 24%, 60%;
+    background-position: 60% bottom, center center;
+    background-repeat: no-repeat;
+    height: 48rem;
+    .container {
+        position: relative;
+        height: 100%;
+        .header-content {
+            .header-content-heading,
+            .header-content-text {
+                line-height: 1.2;
+            }
+            .header-content-heading,
+            .header-content-text,
+            .btn-wrapper {
+                text-align: left;
+            }
+        }
+        .header-content-bottom {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            i {
+                font-size: 3rem;
+            }
+            p {
+                border-bottom: 9px solid $green;
+                text-align: left;
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+.module-placeholder-for-partners {
+    .show-on-mobile {
+        display: none;
+    }
+    .modern-money {
+        p {
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+    }
+    .small-icon-text-module {
+        .container {
+            padding-top: 4rem;
+            padding-bottom: 0;
+        }
+    }
+    .information-disclosure {
+        padding-left: 25%;
+        padding-right: 25%;
+        .rem-3 {
+            font-size: 3rem;
+        }
+    }
+
+    h2.text-lg.font-middlegray {
+        font-weight: 400;
+    }
+}
+
+#for-partners-page {
+    .popup-main-wrapper.contact {
+        left: 33%;
+        right: 33%;
+    }
+
+    .section-ul {
+        margin: 1rem 2.1rem;
+    }
+    
+    .section-li {
+        list-style: disc;
+        padding-bottom: 0.3rem;
+        
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+}
+
+
+/***********************************************************************************************************************
+						Media Queries Desktop 1320
+***********************************************************************************************************************/
+
+@media (max-width: 1320px) {
+    #for-partners-page {
+        .popup-main-wrapper.contact {
+            left: 25%;
+            right: 25%;
+        }
+    }
+}
+
+
+/***********************************************************************************************************************
+					  	Media Queries Tablet 1024
+***********************************************************************************************************************/
+
+@media (max-width: 1024px) {}
+
+
+/***********************************************************************************************************************
+					  	Media Queries Tablet 960
+***********************************************************************************************************************/
+
+@media (max-width: 960px) {}
+
+
+/***********************************************************************************************************************
+						Media Queries Desktop 768
+***********************************************************************************************************************/
+
+@media (max-width: 768px) {
+    #for-partners-page {
+        .popup-main-wrapper.contact {
+            left: 15%;
+            right: 15%;
+        }
+    }
+
+    #popup-contact-us .popup-close {
+        top: 19px;
+    }
+
+    &.for-partners-header {
+        background-size: 28%, 60%;
+        background-position: 45% bottom, center center;
+        .header-content {
+            padding-top: 0;
+            .col-6 {
+                width: 100%;
+                h1,
+                p {
+                    padding: 0 16%;
+                    text-align: center !important;
+                }
+                .btn-wrapper {
+                    text-align: center;
+                }
+            }
+        }
+        .container {
+            .header-content-bottom {
+                bottom: 10px;
+                .col-4 {
+                    display: none;
+                }
+                .col-3,
+                .col-2 {
+                    text-align: center;
+                    width: 30%;
+                }
+            }
+        }
+    }
+    .module-placeholder-for-partners {
+        .modern-money {
+            p {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        .small-icon-text-module {
+            .col-3 {
+                width: 47%;
+                .heading-s {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+        .how-to-start-module {
+            .row {
+                display: flex;
+                flex-flow: column;
+                .hide-on-mobile {display: none;}
+                .show-on-mobile {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+                .col-6 {
+                    width: 100%;
+
+                    &:first-child {
+                        order: 2;
+                    }
+
+                    &:nth-child(2){
+                        order: 1;
+                    }
+
+                    button {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .franchise-module{
+            
+            .row:first-of-type {
+                display: flex;
+                flex-flow: column;
+                .hide-on-mobile {display: none;}
+                .show-on-mobile {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+                .col-6 {
+                    width: 100%;
+
+                    &:first-child {
+                        order: 2;
+                    }
+
+                    &:nth-child(2){
+                        order: 1;
+                    }
+
+                    .image-wrapper {text-align: center;}
+
+                    button {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .row:nth-of-type(2){
+                .hide-on-mobile {display: none;}
+                .show-on-mobile {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+                .col-6 {
+                    width: 100%;
+
+                    .image-wrapper {text-align: center;}
+
+                    button {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .information-disclosure {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+
+/***********************************************************************************************************************
+						Media Queries Desktop 600
+***********************************************************************************************************************/
+
+@media (max-width: 600px) {
+    &.for-partners-header {
+        padding-bottom: 0;
+        .header-content-bottom {
+            i {
+                display: block;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+/***********************************************************************************************************************
+						Media Queries Desktop 480
+***********************************************************************************************************************/
+
+@media (max-width: 480px) {
+    #for-partners-page {
+        .popup-main-wrapper.contact {
+            left: 5%;
+            right: 5%;
+        }
+    }
+
+    #popup-contact-us .popup-close {
+        top: 19px;
+    }
+}
+
+
+/***********************************************************************************************************************
+						Media Queries Desktop 380
+***********************************************************************************************************************/
+
+@media (max-width: 380px) {
+    &.for-partners-header {
+        background-size: 50%, 60%;
+        .header-content {
+            .col-6 {
+                h1,
+                p {
+                    padding: 0;
+                }
+            }
+        }
+        .header-content-bottom {
+            i {
+                display: block;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .module-placeholder-for-partners {
+        .modern-money {
+            p {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        .small-icon-text-module {
+            .col-3 {
+                width: 47%;
+                .heading-s {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+        .how-to-start-module {
+            .row {
+                .col-6 {
+                    .image-wrapper {display: none;}
+                }
+            }
+        }
+
+        .market-module {display: none;}
+
+        .franchise-module{background-color: $white;}
+
+        .information-disclosure {
+            .col-6 {
+                width: 100%;
+            }
+        }
+
+        .short-presentation{
+            margin-left: 1.25%;
+            margin-right: 1.25%;
+        }
+    }
+}
+
+
+/***********************************************************************************************************************
+						Media Queries Desktop 320
+***********************************************************************************************************************/
+
+@media (max-width: 320px) {
+    .for-partners-header {
+        
+        background-size: 43%, 60%;
+
+        .container {
+            .header-content-bottom {
+                .col-3{
+                    width: 28%;
+                }
+            }
+        }
+    }
+}

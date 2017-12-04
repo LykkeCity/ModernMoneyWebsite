@@ -1,0 +1,281 @@
+.btn-wrapper {
+  text-align: center;
+  font-size: 0;
+
+  &.left {
+    text-align: left;
+  }
+}
+
+.btn-lg {
+  display: inline-block;
+  font-family: 'Proxima Nova Semibold';
+  line-height: 58px;
+  max-width: 245px;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  height: 58px;
+  overflow: hidden;
+
+  i {
+    display: inline-block;
+    border-radius: 100%;
+    color: $green;
+    width: 30px;
+    height: 30px;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0.7rem;
+    line-height: 32px;
+
+    &:before {
+      position: absolute;
+      left:50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  span {
+    margin-right: 2rem;
+    line-height: 58px;
+  }
+}
+
+.btn-md {
+  display: inline-block;
+  font-family: 'Proxima Nova Semibold';
+  line-height: 49px;
+  max-width: 160px;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  height: 48px;
+}
+
+.btn-blue-bg {
+    background: $green;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #2db47b;
+    }
+
+    &:disabled {
+        background-color: #689180/*#baf9de*/;
+    }
+}
+.btn-blue-white-border-bg {
+  background: $green;
+  color: #fff;
+  line-height: 55px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #2db47b;
+  }
+}
+
+.btn-white-transparent-border-bg {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  line-height: initial;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #2db47b;
+  }
+}
+
+.btn-black-transparent-border-bg {
+  background: transparent;
+  color: $heading-color;
+  border: 2px solid $heading-color;
+  line-height: initial;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $green;
+    color: $white;
+    border: 0;
+  }
+}
+
+.btn-white-bg {
+  background: #fff;
+  color: $green;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #2db47b;
+    color: #fff;
+
+    i {
+      color: #fff;
+    }
+  }
+}
+
+.btn-circle-md {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  line-height: 50px;
+  font-size: 0.8rem;
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 1600
+***********************************************************************************************************************/
+@media (max-width: 1600px) {
+  .btn-circle-md {
+    height: 40px;
+    width: 40px;
+    line-height: 41px;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 1320
+***********************************************************************************************************************/
+@media (max-width: 1320px) {
+  .btn-lg {
+    font-size: 1.4rem;
+  }
+}
+
+/***********************************************************************************************************************
+					  	Media Queries Tablet 1024
+***********************************************************************************************************************/
+@media (max-width: 1024px) {
+  //.btn-lg {
+  //  max-width: 180px;
+  //  font-size: 1.6rem;
+  //}
+  //.btn-md {
+  //  max-width: 120px;
+  //  font-size: 1.3rem;
+  //}
+  .btn-circle-md {
+    height: 37px;
+    width: 37px;
+    line-height: 38px;
+  }
+}
+
+/***********************************************************************************************************************
+					  	Media Queries Tablet 960
+***********************************************************************************************************************/
+@media (max-width: 960px) {
+  //.btn-lg {
+  //  max-width: 160px;
+  //  font-size: 1.2rem;
+  //}
+  //.btn-md {
+  //  max-width: 100px;
+  //  font-size: 1.1rem;
+  //}
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 768
+***********************************************************************************************************************/
+@media (max-width: 768px) {
+  .btn-lg {
+    line-height: 48px;
+    max-width: 40%;
+    height: 48px;
+
+    span {
+      line-height: 48px;
+    }
+  }
+  .btn-md {
+    line-height: 38px;
+    max-width: 110px;
+    height: 38px;
+  }
+  .btn-blue-white-border-bg {
+    line-height: 44px;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 600
+***********************************************************************************************************************/
+@media (max-width: 600px) {
+  .btn-circle-md {
+    width: 40px;
+    height: 40px;
+  }
+  .btn-lg {
+    font-size: 0.9rem;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 480
+***********************************************************************************************************************/
+@media (max-width: 480px) {
+  .btn-lg {
+    line-height: 38px;
+    height: 38px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 2rem;
+
+    span {
+      line-height: 40px;
+    }
+  }
+  .btn-md {
+    line-height: 30px;
+    height: 28px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+
+  }
+  .btn-blue-white-border-bg {
+    line-height: 34px;
+  }
+
+  .btn-circle-md {
+    height: 44px;
+    width: 44px;
+    line-height: 45px;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 380
+***********************************************************************************************************************/
+@media (max-width: 380px) {
+  .btn-circle-md {
+    height: 40px;
+    width: 40px;
+    line-height: 41px;
+  }
+}
+
+/***********************************************************************************************************************
+						Media Queries Desktop 320
+***********************************************************************************************************************/
+@media (max-width: 320px) {
+
+}
