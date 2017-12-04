@@ -1,10 +1,10 @@
-.debit-card-header {
+.prepaid-card-header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/Debit_Card/header_image.jpg');
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
-.module-placeholder-debit-card {
+.module-placeholder-prepaid-card {
   .text-img-module.how-to-start-module .container {
     padding-top: 4.32rem;
     padding-bottom: 4.32rem;
@@ -20,7 +20,7 @@
 					  	Media Queries Tablet 1024
 ***********************************************************************************************************************/
 @media (max-width: 1024px) {
-  .debit-card-header .single-mobile-img {
+  .prepaid-card-header .single-mobile-img {
     width: 45%;
   }
 }
@@ -29,7 +29,7 @@
 					  	Media Queries Tablet 960
 ***********************************************************************************************************************/
 @media (max-width: 960px) {
-  .debit-card-header .single-mobile-img {
+  .prepaid-card-header .single-mobile-img {
     width: 65%;
   }
 }
@@ -38,7 +38,7 @@
 						Media Queries Desktop 768
 ***********************************************************************************************************************/
 @media (max-width: 768px) {
-  .debit-card-header .single-mobile-img {
+  .prepaid-card-header .single-mobile-img {
     width: 85%;
   }
 }
@@ -47,7 +47,7 @@
 						Media Queries Desktop 600
 ***********************************************************************************************************************/
 @media (max-width: 600px) {
-  .debit-card-header .single-mobile-img {
+  .prepaid-card-header .single-mobile-img {
     width: 100%;
   }
 }
