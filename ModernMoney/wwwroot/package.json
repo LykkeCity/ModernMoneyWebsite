@@ -4,7 +4,8 @@
   "description": "A starter project for Gulp.js",
   "main": " ",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp clean build-css build-js",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",

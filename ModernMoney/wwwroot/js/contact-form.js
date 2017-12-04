@@ -13,6 +13,8 @@ var app = app || {};
             var errorLabel = contactForm.find('.error');
             var action = contactForm.attr('action');
 
+            theform.disabled = true;
+
             $.ajax({
                 type: "POST",
                 url: action,
@@ -36,6 +38,9 @@ var app = app || {};
                     $('#full-name-error').html(errors['FullName']);
                     $('#email-error').html(errors['Email']);
                     $('#phone-number-error').html(errors['PhoneNumber']);
+                },
+                complete: function() {
+                    theform.disabled = false;
                 }
             });
         },
@@ -49,15 +54,15 @@ var app = app || {};
             if (!theInput.checkValidity()) {
                 switch ($(theInput).attr('id')) {
                     case 'FullName':
-                        errorLabel.html('Name is required.');
+                        errorLabel.html('Please enter a name');
                         break;
 
                     case 'Email':
-                        errorLabel.html('Please enter correct email address.');
+                        errorLabel.html('Please enter correct email address');
                         break;
 
                     case 'PhoneNumber':
-                        errorLabel.html('Please enter correct phone number.');
+                        errorLabel.html('Please enter correct phone number');
                         break;
 
                     default:
