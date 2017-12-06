@@ -1,6 +1,7 @@
 /***********************************************************************************************************************
 					   Main styles
 ***********************************************************************************************************************/
+
 .container {
   //max-width: 1240px;
   padding: 0 20px;
@@ -14,14 +15,30 @@
 }
 
 @for $i from 1 through 40 {
-  .mt-#{$i*5} { margin-top: $i * 0.36rem}
-  .mb-#{$i*5} { margin-bottom: $i * 0.36rem}
-  .mr-#{$i*5} { margin-right: $i * 0.36rem}
-  .ml-#{$i*5} { margin-left: $i * 0.36rem}
-  .pt-#{$i*5} { padding-top: $i * 0.36rem}
-  .pb-#{$i*5} { padding-bottom: $i * 0.36rem}
-  .pr-#{$i*5} { padding-right: $i * 0.36rem}
-  .pl-#{$i*5} { padding-left: $i * 0.36rem}
+  .mt-#{$i*5} {
+    margin-top: $i * 0.36rem
+  }
+  .mb-#{$i*5} {
+    margin-bottom: $i * 0.36rem
+  }
+  .mr-#{$i*5} {
+    margin-right: $i * 0.36rem
+  }
+  .ml-#{$i*5} {
+    margin-left: $i * 0.36rem
+  }
+  .pt-#{$i*5} {
+    padding-top: $i * 0.36rem
+  }
+  .pb-#{$i*5} {
+    padding-bottom: $i * 0.36rem
+  }
+  .pr-#{$i*5} {
+    padding-right: $i * 0.36rem
+  }
+  .pl-#{$i*5} {
+    padding-left: $i * 0.36rem
+  }
 }
 
 html {
@@ -53,22 +70,19 @@ html {
 }
 
 .error {
-    color: $red;
+  color: $red;
 }
 
 .email-wrapper-circle {
   .row {
     width: 80%;
     margin: 0 auto;
-    
-    form > div:first-child {
+    form>div:first-child {
       position: relative;
       text-align: center;
-
       input[type="email"] {
         padding: 12px 5px 12px 2.7rem;
       }
-
       i {
         color: $input-border;
         position: absolute;
@@ -82,6 +96,7 @@ html {
 .relative {
   position: relative;
 }
+
 .blue-dot:after {
   content: '';
   width: 1.2rem;
@@ -95,34 +110,6 @@ html {
   left: 0;
 }
 
-//body.blur-nav {
-//  overflow: hidden;
-//  .header,
-//  .footer,
-//  .wrapper,
-//  & >:not(.mobile-nav-module) {
-//    -webkit-filter: blur(5px);
-//    -moz-filter: blur(5px);
-//    -o-filter: blur(5px);
-//    -ms-filter: blur(5px);
-//    filter: blur(5px);
-//  }
-//}
-//
-//body.blur-popup {
-//  overflow: hidden;
-//  .header,
-//  .footer,
-//  .wrapper,
-//  & >:not(.popup-main-wrapper) {
-//    -webkit-filter: blur(5px);
-//    -moz-filter: blur(5px);
-//    -o-filter: blur(5px);
-//    -ms-filter: blur(5px);
-//    filter: blur(5px);
-//  }
-//}
-
 .underline {
   text-decoration: underline;
 }
@@ -131,13 +118,19 @@ html {
   line-height: 48px;
 }
 
-//.contact-module button {
-//  height: 44px;
-//  width: 44px;
-//}
+.join-desktop {
+  display: block;
+}
+
+.join-mobile {
+  display: none !important;
+}
+
+
 /***********************************************************************************************************************
 						Media Queries Desktop 1320
 ***********************************************************************************************************************/
+
 @media (max-width: 1320px) {
   html {
     font-size: 1.1vw;
@@ -146,9 +139,12 @@ html {
     line-height: 42px;
   }
 }
+
+
 /***********************************************************************************************************************
 						Media Queries Desktop 1110
 ***********************************************************************************************************************/
+
 @media (max-width: 1110px) {
   html {
     font-size: 1.3vw;
@@ -158,9 +154,11 @@ html {
   }
 }
 
+
 /***********************************************************************************************************************
 					  	Media Queries Tablet 1024
 ***********************************************************************************************************************/
+
 @media (max-width: 1024px) {
   .container {
     width: 90%;
@@ -170,45 +168,51 @@ html {
   }
 }
 
+
 /***********************************************************************************************************************
 					  	Media Queries Tablet 960
 ***********************************************************************************************************************/
+
 @media (max-width: 960px) {
   html {
     font-size: 1.7vw;
   }
-
   .contact-module a {
     line-height: 42px;
   }
 }
 
+
 /***********************************************************************************************************************
 						Media Queries Desktop 768
 ***********************************************************************************************************************/
+
 @media (max-width: 768px) {
   html {
     font-size: 2vw;
   }
 }
 
+
 /***********************************************************************************************************************
 						Media Queries Desktop 600
 ***********************************************************************************************************************/
+
 @media (max-width: 600px) {
   html {
     font-size: 2.7vw;
   }
 }
 
+
 /***********************************************************************************************************************
 						Media Queries Desktop 480
 ***********************************************************************************************************************/
+
 @media (max-width: 480px) {
   html {
     font-size: 3.5vw;
   }
-
   .email-wrapper-circle {
     .row {
       width: 100%;
@@ -221,20 +225,24 @@ html {
       width: 25%
     }
   }
-
   .container {
     width: 100%;
   }
+
 }
+
 
 /***********************************************************************************************************************
 						Media Queries Desktop 380
 ***********************************************************************************************************************/
+
 @media (max-width: 380px) {}
+
 
 /***********************************************************************************************************************
 						Media Queries Desktop 320
 ***********************************************************************************************************************/
+
 @media (max-width: 320px) {
   html {
     font-size: 4.4vw;

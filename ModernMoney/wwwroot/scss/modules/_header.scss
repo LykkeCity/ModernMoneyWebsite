@@ -103,6 +103,10 @@
       background-color: #3e8e41;
     }
   }
+
+  .join-desktop {display: inline-block;}
+  .join-mobile {display: none;}
+
 }
 
 
@@ -335,7 +339,7 @@
   }
   .header {
     .col-3 {
-      width: 55%;
+      width: 69%;
       padding-left: 1rem;
       .logo-link {
         display: inline-block;
@@ -343,17 +347,20 @@
     }
 
     .col-2 {
-      width: 32.5%;
+      width: 16%;
       padding-left: 0;
       .btn-wrapper {
         text-align: right;
         .btn-md {
           margin: 29px 0;
+          &.join-desktop {display: none;}
+          &.join-mobile {display: inline-block !important;}
         }
       }
     }
     .logo-img {
-      width: 75%;
+      margin-top: 5px;
+      width: 100%;
     }
   }
 }
