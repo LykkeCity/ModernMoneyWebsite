@@ -7,6 +7,19 @@
                 color: $white;
             }
         }
+
+        .btn-black-transparent-border-bg {
+        
+            color: $white;
+            border: 2px solid $white;
+
+          
+            &:hover {
+              background-color: $green;
+              color: $white;
+              border: 0;
+            }
+          }
     }
 }
 
@@ -93,6 +106,13 @@
             padding-bottom: 0;
         }
     }
+}
+
+.owl-prev i {
+    display: block;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
 }
 
 
@@ -300,6 +320,12 @@
         .popup-main-wrapper.contact {
             left: 5%;
             right: 5%;
+        }
+
+        .numbers {
+            .heading-lg {
+                font-size: 1.8rem;
+            }
         }
     }
 

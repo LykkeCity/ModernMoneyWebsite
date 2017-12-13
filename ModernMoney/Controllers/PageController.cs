@@ -15,10 +15,10 @@ namespace ModernMoney.Controllers
         }
 
         [HttpGet]
-        [ActionName("debit-card")]
+        [ActionName("prepaid-card")]
         public ContentResult DebitCard()
         {
-            var page = _GetPage("debit-card.html");
+            var page = _GetPage("prepaid-card.html");
             return Content(page);
         }
 
