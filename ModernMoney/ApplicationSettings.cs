@@ -1,7 +1,6 @@
-﻿using ModernMoney.Infrastructure;
+﻿using Core.Settings;
 using Lykke.SettingsReader;
 using Microsoft.Extensions.Configuration;
-using System.IO;
 
 namespace ModernMoney
 {
@@ -14,7 +13,7 @@ namespace ModernMoney
         {
             var builder = new ConfigurationBuilder()
                 .AddEnvironmentVariables();
-            
+
             Configuration = builder.Build();
 
             AppSettings = (Configuration.LoadSettings<AppSettings>()).CurrentValue;

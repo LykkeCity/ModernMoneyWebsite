@@ -2,20 +2,40 @@
 using ModernMoney.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.Linq;
+using Core.Conversation;
+using Common.Log;
+using System;
+using System.Threading.Tasks;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Net;
 
 namespace ModernMoney.Controllers
 {
     [Route("api/contact")]
     public class ContactController : BaseController
     {
-        public ContactController(IHostingEnvironment envrnmt) : base(envrnmt) { }
+        private readonly IConversationRepository _conversationRepository;
+        protected readonly ILog _log;
+
+        public ContactController(IHostingEnvironment envrnmt,
+                              IConversationRepository conversationRepository, ILog log) : base(envrnmt)
+        {
+            _conversationRepository = conversationRepository;
+            _log = log;
+        }
 
         // POST api/contact
+        /// <summary>
+        /// Contact registration.
+        /// </summary>
+        [SwaggerOperation("ContactsRegistration")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [HttpPost]
-        public IActionResult Post([FromForm]ContactModel contact)
+        public async Task<IActionResult> Post([FromForm]ContactModel model)
         {
             // This fields must not have any value (robots detection). 
-            if (!string.IsNullOrEmpty(contact.Dummy) || !ModelState.IsValid)
+            if (!string.IsNullOrEmpty(model.Dummy) || !ModelState.IsValid)
             {
                 var errors = ModelState.Where(s => s.Value.ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
                     .ToDictionary(
@@ -26,11 +46,16 @@ namespace ModernMoney.Controllers
                 return NotFound(errors);
             }
 
-            EmailSender.SendContact(contact);
-            AzureStorageHelper.Store(contact);
-
+            try
+            {
+                EmailSender.SendContact(model);
+                await _conversationRepository.CreateAsync(model.Create(model));
+            }
+            catch (Exception ex)
+            {
+                await _log.WriteInfoAsync(nameof(ContactController), nameof(Post), model.Email, ex.ToString(), DateTime.Now);
+            }
             return Ok(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Messages.Contact);
         }
-
     }
 }

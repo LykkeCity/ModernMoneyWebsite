@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using ModernMoney.Models;
-using System;
 using System.Net;
 using System.Net.Mail;
-using ModernMoney.Infrastructure;
-using Lykke.SettingsReader;
 
 namespace ModernMoney
 {
@@ -31,15 +28,17 @@ namespace ModernMoney
             return client;
         }
 
-        static EmailSender() {
+        static EmailSender()
+        {
         }
 
-        public static void SendFeedback(FeedbackModel feedback) {
+        public static void SendFeedback(FeedbackModel feedback)
+        {
 
             CreateMailClient().Send(
                ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Credentials.Username,
                ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.FeedbackRecipient,
-               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.FeedbackSubject, 
+               ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.FeedbackSubject,
                 feedback.Message);
         }
 
@@ -69,7 +68,7 @@ namespace ModernMoney
             MailAddress to = new MailAddress(beta.Email, "");
 
             MailMessage message = new MailMessage(from, to);
-           
+
             message.IsBodyHtml = true;
             message.Subject = ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.JoinBetaSubject;
 
