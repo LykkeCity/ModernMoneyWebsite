@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AzureRepositories.Conversation;
+using System.ComponentModel.DataAnnotations;
 
 namespace ModernMoney.Models
 {
-    public class FeedbackModel:BaseForm
+    public class FeedbackModel : BaseForm
     {
         public FeedbackModel()
         {
@@ -17,6 +18,17 @@ namespace ModernMoney.Models
         [EmailAddress(ErrorMessage = "Please enter correct email address")]
         public string Email { get; set; }
         public string Message { get; set; }
-        
+
+        public ConversationEntity Create(FeedbackModel model)
+        {
+            return new ConversationEntity()
+            {
+                Email = model.Email,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                Message = model.Message,
+                ConversationTypeDesc = ConversationType.Feedback.ToString(),
+            };
+        }
     }
 }

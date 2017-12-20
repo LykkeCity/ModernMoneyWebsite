@@ -3,7 +3,7 @@ using System;
 
 namespace ModernMoney.Models
 {
-    public class BaseForm:TableEntity
+    public class BaseForm : TableEntity
     {
         public BaseForm()
         {
