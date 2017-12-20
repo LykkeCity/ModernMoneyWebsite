@@ -3,6 +3,11 @@ using ModernMoney.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.Linq;
 using Core.Conversation;
+using Common.Log;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Net;
+using System;
+using System.Threading.Tasks;
 
 namespace ModernMoney.Controllers
 {
@@ -10,16 +15,24 @@ namespace ModernMoney.Controllers
     public class FeedbackController : BaseController
     {
         private readonly IConversationRepository _conversationRepository;
+        protected readonly ILog _log;
 
         public FeedbackController(IHostingEnvironment envrnmt,
-                           IConversationRepository conversationRepository) : base(envrnmt)
+                           IConversationRepository conversationRepository, ILog log) : base(envrnmt)
         {
             _conversationRepository = conversationRepository;
+            _log = log;
         }
 
         // POST api/feedback
+        /// <summary>
+        /// Send feedback information.
+        /// </summary>
+        [SwaggerOperation("FeedBack")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [HttpPost]
-        public IActionResult Post([FromForm]FeedbackModel model)
+        public async Task<IActionResult> Post([FromForm]FeedbackModel model)
         {
             // This fields must not have any value (robots detection). 
             if (!string.IsNullOrEmpty(model.Dummy) || !ModelState.IsValid)
@@ -30,13 +43,18 @@ namespace ModernMoney.Controllers
                     v => string.Join(" / ", v.Value.Errors.Select(e => e.ErrorMessage).ToList()
                     ));
 
-
                 return NotFound(errors);
             }
 
-            EmailSender.SendFeedback(model);
-
-            _conversationRepository.CreateAsync(model.Create(model));
+            try
+            {
+                EmailSender.SendFeedback(model);
+                await _conversationRepository.CreateAsync(model.Create(model));
+            }
+            catch (Exception ex)
+            {
+                await _log.WriteInfoAsync(nameof(FeedbackController), nameof(Post), model.Email, ex.ToString(), DateTime.Now);
+            }
 
             return Ok(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Messages.Feedback);
         }

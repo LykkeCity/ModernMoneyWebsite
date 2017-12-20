@@ -3,6 +3,11 @@ using ModernMoney.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.Linq;
 using Core.Conversation;
+using Common.Log;
+using System;
+using System.Threading.Tasks;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Net;
 
 namespace ModernMoney.Controllers
 {
@@ -10,16 +15,24 @@ namespace ModernMoney.Controllers
     public class ContactController : BaseController
     {
         private readonly IConversationRepository _conversationRepository;
+        protected readonly ILog _log;
 
         public ContactController(IHostingEnvironment envrnmt,
-                              IConversationRepository conversationRepository) : base(envrnmt)
+                              IConversationRepository conversationRepository, ILog log) : base(envrnmt)
         {
             _conversationRepository = conversationRepository;
+            _log = log;
         }
 
         // POST api/contact
+        /// <summary>
+        /// Contact registration.
+        /// </summary>
+        [SwaggerOperation("ContactsRegistration")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [HttpPost]
-        public IActionResult Post([FromForm]ContactModel model)
+        public async Task<IActionResult> Post([FromForm]ContactModel model)
         {
             // This fields must not have any value (robots detection). 
             if (!string.IsNullOrEmpty(model.Dummy) || !ModelState.IsValid)
@@ -33,12 +46,16 @@ namespace ModernMoney.Controllers
                 return NotFound(errors);
             }
 
-            EmailSender.SendContact(model);
-
-            _conversationRepository.CreateAsync(model.Create(model));
-
+            try
+            {
+                EmailSender.SendContact(model);
+                await _conversationRepository.CreateAsync(model.Create(model));
+            }
+            catch (Exception ex)
+            {
+                await _log.WriteInfoAsync(nameof(ContactController), nameof(Post), model.Email, ex.ToString(), DateTime.Now);
+            }
             return Ok(ApplicationSettings.AppSettings.ModernMoneyWebsite.Email.Messages.Contact);
         }
-
     }
 }
