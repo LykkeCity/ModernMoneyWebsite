@@ -2117,7 +2117,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
@@ -4787,26 +4787,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dafinka\\.nuget\\packages\\": {},
+    "C:\\Users\\Todor\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "D:\\Dafi_files\\Lykke_Partners\\ModernMoneyWebsite\\AzureRepositories\\AzureRepositories.csproj",
+      "projectUniqueName": "D:\\Desktop\\Lykke\\ModernMoneyWebsite\\AzureRepositories\\AzureRepositories.csproj",
       "projectName": "AzureRepositories",
-      "projectPath": "D:\\Dafi_files\\Lykke_Partners\\ModernMoneyWebsite\\AzureRepositories\\AzureRepositories.csproj",
-      "packagesPath": "C:\\Users\\Dafinka\\.nuget\\packages\\",
-      "outputPath": "D:\\Dafi_files\\Lykke_Partners\\ModernMoneyWebsite\\AzureRepositories\\obj\\",
+      "projectPath": "D:\\Desktop\\Lykke\\ModernMoneyWebsite\\AzureRepositories\\AzureRepositories.csproj",
+      "packagesPath": "C:\\Users\\Todor\\.nuget\\packages\\",
+      "outputPath": "D:\\Desktop\\Lykke\\ModernMoneyWebsite\\AzureRepositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dafinka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Todor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4819,8 +4816,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Dafi_files\\Lykke_Partners\\ModernMoneyWebsite\\Core\\Core.csproj": {
-              "projectPath": "D:\\Dafi_files\\Lykke_Partners\\ModernMoneyWebsite\\Core\\Core.csproj"
+            "D:\\Desktop\\Lykke\\ModernMoneyWebsite\\Core\\Core.csproj": {
+              "projectPath": "D:\\Desktop\\Lykke\\ModernMoneyWebsite\\Core\\Core.csproj"
             }
           }
         }
@@ -4836,12 +4833,12 @@
         "dependencies": {
           "Lykke.AzureStorage": {
             "target": "Package",
-            "version": "3.1.0"
+            "version": "[3.1.0, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

@@ -63,8 +63,8 @@
                 </div>
                 <div class="col-2">
                     <div class="btn-wrapper">
-                        <button class="btn-md btn-black-transparent-border-bg uppercase single-popup join-desktop" data-type="joinUs">Join Beta</button>
-                        <button class="btn-md btn-black-transparent-border-bg uppercase single-popup join-mobile" data-type="joinUs">Join</button>
+                        <a href="mailto:kristian.smilenov@lykke.com" class="no-decoration text-black"><button class="btn-md btn-black-transparent-border-bg uppercase join-desktop">Join Beta</button></а>
+                        <a href="mailto:kristian.smilenov@lykke.com" class="no-decoration text-black"><button class="btn-md btn-black-transparent-border-bg uppercase join-mobile">Join</button></а>
                     </div>
                 </div>
             </div>
@@ -93,39 +93,10 @@
                     <h1 class="heading-md center font-darkgray">Had a chance to test Modern Money?</h1>
                     <p class="text-lg center pb-60">Get in touch with us and share your thoughts on how we can make it better</p>
 
-                    <form action="/api/feedback" method="post" class="content">
-                        <div class="row pb-20">
-                            <div class="col-6">
-                                <input type="text" name="FirstName" placeholder="First name" required>
-                                <div id="first-name-error" class="error left pl-10 text-xs"></div>
-                            </div>
-                            <div class="col-6">
-                                <input type="text" name="LastName" placeholder="Last name" required>
-                                <div id="last-name-error" class="error left pl-10 text-xs"></div>
-                            </div>
+                    <div class="row">
+                        <div class="col-12 center">
+                            <a href="mailto:kristian.smilenov@lykke.com"><button class="btn-lg btn-blue-bg mb-30">Send feedback</button></a>
                         </div>
-                        <div class="row pb-20">
-                            <div class="col-12">
-                                <input type="email" name="Email" id="Email" placeholder="Email address" required>
-                                <div id="email-error" class="error left pl-10 text-xs"></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <textarea name="Message" id="" cols="30" rows="10" placeholder="What do you like about Modern Money and what do you think can be improved?"></textarea>
-                            </div>
-                        </div>
-
-                        <input type="hidden" name="Dummy" value="" />
-                        <div class="row pb-80 pt-40">
-                            <div class="col-12 center">
-                                <button type="button" class="btn-blue-bg btn-lg" onclick="app.FeedbackForm.submit(this)">Send feedback</button>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="success center pt-100 pb-160">
-                        <h1 class="heading-md pb-20 font-green">Thank you!</h1>
-                        <p class="text-s pb-20 font-gray">Your feedback was sent successfully. We will contact you as soon as possible.</p>
                     </div>
                     <div class="row pb-40">
                         <div class="col-12">
@@ -142,7 +113,7 @@
                 <div class="container pt-60 pb-80">
                     <h1 class="heading-md center font-white pb-10">Get Modern Money today!</h1>
                     <div class="btn-wrapper">
-                        <button class="btn-lg btn-white-bg single-popup" data-type="joinUs">Join BETA program</button>
+                        <a href="mailto:kristian.smilenov@lykke.com"><button class="btn-lg btn-white-bg">Join BETA program</button></a>
                     </div>
                 </div>
             </article>
@@ -150,15 +121,7 @@
             <article class="contact-module">
                 <div class="container pt-60 pb-100">
                     <div class="row">
-                        <div class="col-6">
-                            <div class="img-wrapper">
-                                <i class="icon-asset-34 box-icon"></i>
-                            </div>
-                            <div class="center pt-20 pb-50">
-                                <h3 class="heading-s font-darkgray">Contact support</h3>
-                                <p class="text-md font-gray pb-20">We are always here to help:</p>
-                                <a href="mailto:support@modernmoney.io" class="font-green">support@modernmoney.io</a>
-                            </div>
+                        <div class="col-6">                            
                             <div class="left">
                                 <p class="text-xs font-gray pb-10">
                                     Trading financial products involves significant risk and can result in the loss of your invested capital. You should not invest more than you can afford to lose and should ensure that you fully understand the risks involved. Trading leveraged products may not be suitable for all investors. Before trading, please take into consideration your level of experience and investment objectives, and seek independent financial advice if necessary. It is the responsibility of the Client to ascertain whether he/ she is permitted to use the services of Lykke Vanuatu Limited based on the legal requirements in his/ her country of residence. Please read the full Risk Disclosure statement.
@@ -168,32 +131,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="img-wrapper">
-                                <i class="icon-asset-35 box-icon"></i>
-                            </div>
-                            <div class="center pt-20 pb-50">
-                                <h3 class="heading-s font-darkgray">Our newsletter</h3>
-                                <p class="text-md font-gray pb-20">Get our latest news delivered directly to your mailbox</p>
-                                <div class="email-wrapper-circle">
-                                    <div class="row">
-
-                                        <form action="/api/newsletter" method="post" onkeypress="return event.keyCode != 13;" class="clearfix">
-                                            <div class="col-10">
-                                                <input id="Email" type="email" name="Email" placeholder="Email address" required onblur="app.FeedbackForm.isEmailValid(this)">
-                                                <i class="icon-asset-74"></i>
-                                                <div class="error left pl-10 text-xs"></div>
-                                            </div>
-                                            <input type="hidden" name="Dummy" value="" />
-                                            <div class="col-2">
-                                                <button class="btn-md btn-blue-bg btn-circle-md" type="button" onclick="app.FeedbackForm.submit(this)">
-                                                    <i class="icon-asset-73"></i>
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-6">                            
                             <div class="left">
                                 <p class="text-xs font-gray pb-10">
                                     Lykke Corp (Lykke AG) is registered in Zug, Switzerland. Identification number CHE-345.258.499. Commercial register (pdf).
@@ -216,30 +154,9 @@
     </div>
     <footer class="footer lightgray-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <h3 class="heading-xs font-darkgray">Newsletter</h3>
-                    <p class="text-xs font-gray">Get our latest news delivered directly to your mailbox</p>
-                    <div class="email-wrapper-circle">
-                        <div class="row">
-                            <form action="/api/newsletter" method="post" onkeypress="return event.keyCode != 13;" class="clearfix">
-                                <div class="col-10">
-                                    <input type="email" name="Email" placeholder="Email address" required onblur="app.FeedbackForm.isEmailValid(this)">
-                                    <i class="icon-asset-74"></i>
-                                    <div class="error left pl-10 text-xs"></div>
-                                </div>
-                                <input type="hidden" name="Dummy" value="" />
-                                <div class="col-2">
-                                    <button class="btn-md btn-blue-bg btn-circle-md" type="button" onclick="app.FeedbackForm.submit(this)">
-                                        <i class="icon-asset-73"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <nav class="footer-nav pl-50">
+            <div class="row">                
+                <div class="col-12">
+                    <nav class="footer-nav pl-25">
                         <div class="row">
                             <div class="col-3">
                                 <h4 class="footer-heading pb-10 heading-xs font-darkgray">Services</h4>
@@ -305,7 +222,7 @@
                                         <a href="https://www.lykke.com/city/open_positions" class="heading-xs light font-gray footer-link">Open positions</a>
                                     </li>
                                     <li class="footer-link-li pb-5">
-                                        <a href="https://www.lykke.com/b2b-join" class="heading-xs light font-gray footer-link">Join as Blockchain Accelerator</a>
+                                        <a href="https://www.lykke.com/b2b-join" class="heading-xs light font-gray footer-link">Blockchain Accelerator</a>
                                     </li>
                                 </ul>
                             </div>
@@ -316,7 +233,7 @@
             <div class="row pt-80">
                 <div class="col-6">
                     <div class="copyright">
-                        <span class="text-xs font-gray">&copy; 2017 Lykke, Inc.</span>
+                        <span class="text-xs font-gray">&copy; 2018 Lykke, Inc.</span>
                         <span class="dot">&#8231;</span>
                         <a href="https://www.lykke.com/privacy_policy" target="_blank" class="text-xs font-gray">Privacy Policy</a>
                         <span class="dot">&#8231;</span>

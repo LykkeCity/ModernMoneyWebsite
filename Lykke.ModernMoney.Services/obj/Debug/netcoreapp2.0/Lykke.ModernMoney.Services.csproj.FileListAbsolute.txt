@@ -9,3 +9,15 @@ D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\D
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.AssemblyInfo.cs
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.dll
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.pdb
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\bin\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.deps.json
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\bin\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.dll
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\bin\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.pdb
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\bin\Debug\netcoreapp2.0\Core.dll
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\bin\Debug\netcoreapp2.0\Core.pdb
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.csprojAssemblyReference.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.csproj.CoreCompileInputs.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.AssemblyInfoInputs.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.AssemblyInfo.cs
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.csproj.CopyComplete
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.dll
+D:\Desktop\Lykke\ModernMoneyWebsite\Lykke.ModernMoney.Services\obj\Debug\netcoreapp2.0\Lykke.ModernMoney.Services.pdb

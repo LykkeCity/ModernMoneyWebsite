@@ -9,3 +9,15 @@ D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\AzureRepositories\bin\Debug\netc
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\AzureRepositories\bin\Debug\netcoreapp2.0\Core.pdb
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.dll
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.pdb
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\bin\Debug\netcoreapp2.0\AzureRepositories.deps.json
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\bin\Debug\netcoreapp2.0\AzureRepositories.dll
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\bin\Debug\netcoreapp2.0\AzureRepositories.pdb
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\bin\Debug\netcoreapp2.0\Core.dll
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\bin\Debug\netcoreapp2.0\Core.pdb
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.csprojAssemblyReference.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.csproj.CoreCompileInputs.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.AssemblyInfoInputs.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.AssemblyInfo.cs
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.csproj.CopyComplete
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.dll
+D:\Desktop\Lykke\ModernMoneyWebsite\AzureRepositories\obj\Debug\netcoreapp2.0\AzureRepositories.pdb

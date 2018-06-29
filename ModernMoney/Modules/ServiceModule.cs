@@ -1,8 +1,6 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using AzureRepositories;
 using Common.Log;
-using Core.Conversation;
 using Core.Services;
 using Core.Settings;
 using Lykke.ModernMoney.Services;
@@ -29,11 +27,7 @@ namespace ModernMoney.Modules
             RegisterLocalTypes(builder);
             RegisterLocalServices(builder);
 
-            builder.RegisterInstance(_settings.CurrentValue.ModernMoneyWebsite.Email);
-
-            builder.RegisterInstance<IConversationRepository>(
-                  AzureRepoBinder.CreateConversationInformationRepository(_settings.ConnectionString(x => x.ModernMoneyWebsite.AzureStorage.ClientPersonalInfoConnString), _log)).
-              SingleInstance();
+            builder.RegisterInstance(_settings.CurrentValue.ModernMoneyWebsite.Email);            
 
             builder.Populate(_services);
         }
