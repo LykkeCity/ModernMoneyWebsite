@@ -664,26 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dafinka\\.nuget\\packages\\": {},
+    "C:\\Users\\Todor\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "D:\\Dafi_files\\Lykke_Partners\\ModernMoneyWebsite\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\Desktop\\Lykke\\ModernMoneyWebsite\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "D:\\Dafi_files\\Lykke_Partners\\ModernMoneyWebsite\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\Dafinka\\.nuget\\packages\\",
-      "outputPath": "D:\\Dafi_files\\Lykke_Partners\\ModernMoneyWebsite\\Core\\obj\\",
+      "projectPath": "D:\\Desktop\\Lykke\\ModernMoneyWebsite\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\Todor\\.nuget\\packages\\",
+      "outputPath": "D:\\Desktop\\Lykke\\ModernMoneyWebsite\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dafinka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Todor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -710,7 +707,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

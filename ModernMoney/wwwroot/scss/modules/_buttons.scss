@@ -112,22 +112,35 @@
     background-color: $green;
     color: $white;
     border: 0;
+
+    a {
+        color: $white;
+    }
   }
 }
 
 .btn-white-bg {
-  background: #fff;
-  color: $green;
-  transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: $green;
+    transition: all 0.2s ease-in-out;
 
-  &:hover {
-    background-color: #2db47b;
-    color: #fff;
-
-    i {
-      color: #fff;
+    a {
+        color: $green;
+        text-decoration: none;
     }
-  }
+
+    &:hover {
+        background-color: #2db47b;
+        color: #fff;
+
+        a {
+            color: $white;
+        }
+
+        i {
+            color: #fff;
+        }
+    }
 }
 
 .btn-circle-md {

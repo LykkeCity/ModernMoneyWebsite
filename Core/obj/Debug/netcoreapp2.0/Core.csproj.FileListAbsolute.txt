@@ -7,3 +7,11 @@ D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Cor
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Core.dll
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Core.pdb
 D:\Dafi_files\Lykke_Partners\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Core.csprojResolveAssemblyReference.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\Core\bin\Debug\netcoreapp2.0\Core.deps.json
+D:\Desktop\Lykke\ModernMoneyWebsite\Core\bin\Debug\netcoreapp2.0\Core.dll
+D:\Desktop\Lykke\ModernMoneyWebsite\Core\bin\Debug\netcoreapp2.0\Core.pdb
+D:\Desktop\Lykke\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Core.csproj.CoreCompileInputs.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Core.AssemblyInfoInputs.cache
+D:\Desktop\Lykke\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Core.AssemblyInfo.cs
+D:\Desktop\Lykke\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Core.dll
+D:\Desktop\Lykke\ModernMoneyWebsite\Core\obj\Debug\netcoreapp2.0\Core.pdb
